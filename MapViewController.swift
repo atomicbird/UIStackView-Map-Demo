@@ -24,6 +24,21 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var accuracyField: UITextField!
     @IBOutlet weak var speedField: UITextField!
     @IBOutlet weak var directionField: UITextField!
+    @IBOutlet var utilityButtons: [UIButton]! {
+        didSet {
+            utilityButtons.forEach { (button) in
+                button.isHidden = true
+            }
+        }
+    }
+    
+    @IBAction func showHideButtons() {
+        UIView.animate(withDuration: 0.3) {
+            self.utilityButtons.forEach { (button) in
+                button.isHidden = !button.isHidden
+            }
+        }
+    }
     
     let locationManager : CLLocationManager = {
         let manager = CLLocationManager()

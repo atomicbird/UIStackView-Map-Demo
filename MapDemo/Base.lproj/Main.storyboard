@@ -18,7 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DVS-ak-cEk"/>
@@ -139,7 +139,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kwB-2R-nVG">
@@ -224,11 +224,41 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="R7x-Kp-Lc9">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YlB-WZ-Qdy">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="⚙"/>
+                                        <connections>
+                                            <action selector="showHideButtons" destination="8rJ-Kc-sve" eventType="touchUpInside" id="2lJ-Lk-2Yb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aZ-nH-vLo">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="✉️"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ha-nv-vhv">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="📍"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1s-kU-JDx">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="🔍"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyK-hf-Uzv">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="👺"/>
+                                    </button>
+                                </subviews>
+                                <variation key="heightClass=compact" axis="horizontal"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="R7x-Kp-Lc9" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="6ky-ra-ooq"/>
                             <constraint firstItem="kwB-2R-nVG" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="9zX-VP-AwO"/>
                             <constraint firstItem="kwB-2R-nVG" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="ilj-NK-3C9"/>
+                            <constraint firstItem="R7x-Kp-Lc9" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="lX1-0P-3hN"/>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="kwB-2R-nVG" secondAttribute="bottom" id="nJU-Rh-frH"/>
                             <constraint firstAttribute="trailing" secondItem="kwB-2R-nVG" secondAttribute="trailing" id="oXE-Iv-KFy"/>
                         </constraints>
@@ -242,6 +272,10 @@
                         <outlet property="longitudeField" destination="TbT-fK-7Rb" id="Ffx-Zm-vHl"/>
                         <outlet property="mapView" destination="bM4-pv-MtG" id="YDw-U3-71Y"/>
                         <outlet property="speedField" destination="1fI-88-dLH" id="Eo4-nI-YQO"/>
+                        <outletCollection property="utilityButtons" destination="4aZ-nH-vLo" collectionClass="NSMutableArray" id="luk-zT-mcY"/>
+                        <outletCollection property="utilityButtons" destination="5ha-nv-vhv" collectionClass="NSMutableArray" id="Fln-mH-jAi"/>
+                        <outletCollection property="utilityButtons" destination="y1s-kU-JDx" collectionClass="NSMutableArray" id="am9-MI-IAw"/>
+                        <outletCollection property="utilityButtons" destination="vyK-hf-Uzv" collectionClass="NSMutableArray" id="pug-gd-nlF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
