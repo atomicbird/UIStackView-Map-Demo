@@ -15,6 +15,7 @@
 		EE128EEF1D3AE88D0004E82D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE128EED1D3AE88D0004E82D /* LaunchScreen.storyboard */; };
 		EE128EFA1D3AE88D0004E82D /* MapDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE128EF91D3AE88D0004E82D /* MapDemoTests.swift */; };
 		EE128F051D3AE88D0004E82D /* MapDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE128F041D3AE88D0004E82D /* MapDemoUITests.swift */; };
+		EE128F131D3AEF400004E82D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE128F121D3AEF400004E82D /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		EE128F001D3AE88D0004E82D /* MapDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE128F041D3AE88D0004E82D /* MapDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDemoUITests.swift; sourceTree = "<group>"; };
 		EE128F061D3AE88D0004E82D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE128F121D3AEF400004E82D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				EE128EE11D3AE88D0004E82D /* MapDemo */,
+				EE128F121D3AEF400004E82D /* MapViewController.swift */,
 				EE128EF81D3AE88D0004E82D /* MapDemoTests */,
 				EE128F031D3AE88D0004E82D /* MapDemoUITests */,
 				EE128EE01D3AE88D0004E82D /* Products */,
@@ -271,6 +274,7 @@
 				EE128EE71D3AE88D0004E82D /* SecondViewController.swift in Sources */,
 				EE128EE31D3AE88D0004E82D /* AppDelegate.swift in Sources */,
 				EE128EE51D3AE88D0004E82D /* FirstViewController.swift in Sources */,
+				EE128F131D3AEF400004E82D /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

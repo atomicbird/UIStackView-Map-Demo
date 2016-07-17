@@ -12,7 +12,7 @@
         <!--Map-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="MapDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="MapViewController" customModule="MapDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -88,6 +88,13 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="accuracyField" destination="wkC-yk-tnX" id="1XC-bg-2dB"/>
+                        <outlet property="altitudeField" destination="OlG-hh-iDK" id="DS0-Ue-TRs"/>
+                        <outlet property="latitudeField" destination="xuj-SL-5eT" id="GPP-hL-obn"/>
+                        <outlet property="longitudeField" destination="Ukz-ZR-cnD" id="6pd-Un-6XT"/>
+                        <outlet property="mapView" destination="DVS-ak-cEk" id="nBF-4n-7y6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -96,7 +103,7 @@
         <!--Map Stack-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="MapDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="MapViewController" customModule="MapDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -179,6 +186,13 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map Stack" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="accuracyField" destination="6Pc-2z-o6Y" id="B81-Nr-gzr"/>
+                        <outlet property="altitudeField" destination="PlA-io-hQV" id="Lff-aB-IdL"/>
+                        <outlet property="latitudeField" destination="KIB-e2-ZNj" id="wvu-iB-eBT"/>
+                        <outlet property="longitudeField" destination="TbT-fK-7Rb" id="Ffx-Zm-vHl"/>
+                        <outlet property="mapView" destination="bM4-pv-MtG" id="YDw-U3-71Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
