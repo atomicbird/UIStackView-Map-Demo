@@ -119,9 +119,11 @@
                     <connections>
                         <outlet property="accuracyField" destination="wkC-yk-tnX" id="1XC-bg-2dB"/>
                         <outlet property="altitudeField" destination="OlG-hh-iDK" id="DS0-Ue-TRs"/>
+                        <outlet property="directionField" destination="bvY-5D-Psx" id="PHz-Go-KUQ"/>
                         <outlet property="latitudeField" destination="xuj-SL-5eT" id="GPP-hL-obn"/>
                         <outlet property="longitudeField" destination="Ukz-ZR-cnD" id="6pd-Un-6XT"/>
                         <outlet property="mapView" destination="DVS-ak-cEk" id="nBF-4n-7y6"/>
+                        <outlet property="speedField" destination="EBq-Rj-YQF" id="aue-k5-XRv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -163,7 +165,7 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1fI-88-dLH">
+                                                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1fI-88-dLH">
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
@@ -194,7 +196,7 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eOx-rU-Oya">
+                                                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eOx-rU-Oya">
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
@@ -235,9 +237,11 @@
                     <connections>
                         <outlet property="accuracyField" destination="6Pc-2z-o6Y" id="B81-Nr-gzr"/>
                         <outlet property="altitudeField" destination="PlA-io-hQV" id="Lff-aB-IdL"/>
+                        <outlet property="directionField" destination="eOx-rU-Oya" id="2pN-Uz-tys"/>
                         <outlet property="latitudeField" destination="KIB-e2-ZNj" id="wvu-iB-eBT"/>
                         <outlet property="longitudeField" destination="TbT-fK-7Rb" id="Ffx-Zm-vHl"/>
                         <outlet property="mapView" destination="bM4-pv-MtG" id="YDw-U3-71Y"/>
+                        <outlet property="speedField" destination="1fI-88-dLH" id="Eo4-nI-YQO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>

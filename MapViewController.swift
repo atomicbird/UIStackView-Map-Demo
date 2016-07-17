@@ -22,6 +22,8 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var latitudeField: UITextField!
     @IBOutlet weak var altitudeField: UITextField!
     @IBOutlet weak var accuracyField: UITextField!
+    @IBOutlet weak var speedField: UITextField!
+    @IBOutlet weak var directionField: UITextField!
     
     let locationManager : CLLocationManager = {
         let manager = CLLocationManager()
@@ -36,6 +38,8 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             latitudeField.text = String(format: "%6.4f", location.coordinate.latitude)
             altitudeField.text = String(format: "%6.4f", location.altitude)
             accuracyField.text = String(format: "%6.4f", location.horizontalAccuracy)
+            speedField.text = String(format: "%6.4f", location.speed)
+            directionField.text = String(format: "%6.4f", location.course)
         }
     }
 }
